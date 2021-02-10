@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/jquery.countdown.css">
+  <link rel="stylesheet" href="./assets/css/timeTo.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Document</title>
 </head>
@@ -49,16 +49,7 @@
         <div class="card-body">
           <ul class="list-unstyled count-down-time">
             <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-6 count-right">
-                <li><span class="minutes">00</span>
-                  <p class="minutes_text">دقايق</p>
-                </li>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-6 ">
-                <li><span class="seconds">00</span>
-                  <p class="seconds_text">ثواني </p>
-                </li>
-              </div>
+              <div id="countdown"></div>
             </div>
           </ul>
         </div>
@@ -134,26 +125,8 @@
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
-  <script src="./assets/js/jquery.countdown.min.js"></script>
+  <script src="./assets/js/jquery.time-to.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script class="source" type="text/javascript">
-    var now = new Date();
-    var day = now.getDate();
-    var month = now.getMonth() + 1;
-    var year = now.getFullYear() + 1;
-
-    var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-
-    $('.count-down-time').countdown({
-      date: nextyear, // TODO Date format: 07/27/2017 17:00:00
-      offset: +2, // TODO Your Timezone Offset
-      day: 'يوم',
-      days: 'يوم',
-      hideOnComplete: true
-    }, function (container) {
-      alert('Done!');
-    });
-  </script>
 </body>
 
 </html>

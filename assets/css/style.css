@@ -265,6 +265,7 @@ img {
   padding: 52px 65px 150px 65px;
   background-color: #fff;
   background-color: #f6dbd8;
+  position: relative;
 }
 .compition-time .card .card-body .count-down-time {
   margin: 0 !important;
@@ -300,6 +301,18 @@ img {
 }
 .compition-time .card .card-body .count-down-time .count-right li {
   margin-left: auto !important;
+}
+.compition-time .card .card-body #timer-parent {
+  width: 440px;
+  border: 1px solid #e9aaa2;
+  margin: auto;
+  text-align: center;
+  border-radius: 28px;
+  height: 200px;
+  line-height: 200px;
+  color: #e9aaa2;
+  font-size: 123px;
+  word-break: normal;
 }
 
 .proplem {
@@ -400,9 +413,16 @@ footer .footer-slider .slick-next::before {
   .choose-gift .card {
     height: auto;
   }
+
+  #timer-parent {
+    width: auto !important;
+    height: auto !important;
+    font-size: 93px !important;
+  }
 }
 @media (max-width: 524px) {
-  .header .logo, .header .social {
+  .header .logo,
+.header .social {
     text-align: center;
   }
 
@@ -432,16 +452,29 @@ footer .footer-slider .slick-next::before {
     height: auto;
     max-height: 100% !important;
   }
+
+  .compition-time .card .card-body {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
 }
 @media (max-width: 376px) {
   .proplem {
     margin-top: 0;
   }
+
+  .compition-time .card .card-body {
+    padding-bottom: 70px !important;
+  }
 }
 @media (max-width: 321px) {
   .compition-time .card .card-body {
-    padding: 0;
+    padding: 30px !important;
     padding-top: 40px;
+  }
+
+  .compition-time .card .card-body #timer-parent {
+    font-size: 80px !important;
   }
 }
 footer .footer-slider .slider-item {

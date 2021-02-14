@@ -393,7 +393,7 @@ footer {
   .footer-slider {
     .slider-item {
       @extend %imgAsBackGround;
-      height: 593px;
+      // height: 650px;
       &:focus {
         outline: 0 !important;
       }

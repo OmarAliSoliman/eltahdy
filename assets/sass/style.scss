@@ -438,6 +438,16 @@ footer {
   }
 }
 
+@media (max-width: 1024px){
+  footer{
+    .footer-slider{
+      .slider-item{
+        height: 570px;
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .user-date {
     margin-top: -90px;

@@ -362,6 +362,9 @@ img {
 footer {
   margin-top: 100px;
 }
+footer .footer-slider .slider-item {
+  height: 700px;
+}
 footer .footer-slider .slider-item:focus {
   outline: 0 !important;
 }
@@ -416,6 +419,10 @@ footer .footer-slider .slick-next::before {
     height: auto !important;
     font-size: 93px !important;
   }
+
+  footer .footer-slider .slider-item {
+    height: 430px;
+  }
 }
 @media (max-width: 524px) {
   .header .logo,
@@ -454,6 +461,10 @@ footer .footer-slider .slick-next::before {
     padding-right: 50px !important;
     padding-left: 50px !important;
   }
+
+  footer .footer-slider .slider-item {
+    height: 255px;
+  }
 }
 @media (max-width: 376px) {
   .proplem {
@@ -462,6 +473,10 @@ footer .footer-slider .slick-next::before {
 
   .compition-time .card .card-body {
     padding-bottom: 70px !important;
+  }
+
+  footer .footer-slider .slider-item {
+    height: 230px;
   }
 }
 @media (max-width: 321px) {

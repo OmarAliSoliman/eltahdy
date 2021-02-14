@@ -393,7 +393,7 @@ footer {
   .footer-slider {
     .slider-item {
       @extend %imgAsBackGround;
-      // height: 650px;
+      height: 700px;
       &:focus {
         outline: 0 !important;
       }
@@ -457,6 +457,13 @@ footer {
     height: auto !important;
     font-size: 93px !important;
   }
+  footer{
+    .footer-slider{
+      .slider-item{
+        height: 430px;
+      }
+    }
+  }
 }
 
 @media (max-width: 524px) {
@@ -491,6 +498,15 @@ footer {
     padding-right: 50px !important;
     padding-left: 50px !important;
   }
+  footer{
+    .footer-slider{
+      .slider-item{
+        // background-size: contain !important;
+        // background-repeat: no-repeat;
+        height: 255px;
+      }
+    }
+  }
 }
 
 @media (max-width: 376px) {
@@ -499,6 +515,15 @@ footer {
   }
   .compition-time .card .card-body{
     padding-bottom: 70px !important;
+  }
+  footer{
+    .footer-slider{
+      .slider-item{
+        // background-size: contain !important;
+        // background-repeat: no-repeat;
+        height: 230px;
+      }
+    }
   }
 }
 

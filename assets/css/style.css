@@ -396,7 +396,7 @@ footer .footer-mobile-slider .slider-item:focus {
   outline: 0 !important;
 }
 footer .footer-mobile-slider .slider-item img {
-  height: 200px;
+  height: 220px;
 }
 footer .footer-mobile-slider .slick-prev {
   left: 10px;
@@ -492,7 +492,7 @@ footer .footer-mobile-slider .slick-next::before {
   }
 
   footer .footer-desktop-slider .slider-item {
-    height: 265px;
+    height: 255px;
   }
 
   .footer-desktop-slider {

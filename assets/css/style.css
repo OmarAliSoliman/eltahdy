@@ -302,18 +302,6 @@ img {
 .compition-time .card .card-body .count-down-time .count-right li {
   margin-left: auto !important;
 }
-.compition-time .card .card-body #timer-parent {
-  width: 440px;
-  border: 1px solid #e9aaa2;
-  margin: auto;
-  text-align: center;
-  border-radius: 28px;
-  height: 200px;
-  line-height: 200px;
-  color: #e9aaa2;
-  font-size: 123px;
-  word-break: normal;
-}
 
 .proplem {
   text-align: center;
@@ -362,17 +350,17 @@ img {
 footer {
   margin-top: 100px;
 }
-footer .footer-slider .slider-item {
-  height: 700px;
+footer .footer-desktop-slider .slider-item {
+  height: 593px;
 }
-footer .footer-slider .slider-item:focus {
+footer .footer-desktop-slider .slider-item:focus {
   outline: 0 !important;
 }
-footer .footer-slider .slick-prev {
+footer .footer-desktop-slider .slick-prev {
   left: 10px;
   z-index: 9;
 }
-footer .footer-slider .slick-prev::before {
+footer .footer-desktop-slider .slick-prev::before {
   content: "";
   width: 75px !important;
   height: 75px !important;
@@ -381,14 +369,14 @@ footer .footer-slider .slick-prev::before {
   line-height: 75px;
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: #000;
   font-size: 50px !important;
   border-radius: 50%;
 }
-footer .footer-slider .slick-next {
+footer .footer-desktop-slider .slick-next {
   right: 60px;
 }
-footer .footer-slider .slick-next::before {
+footer .footer-desktop-slider .slick-next::before {
   content: "";
   width: 75px !important;
   height: 75px !important;
@@ -397,13 +385,49 @@ footer .footer-slider .slick-next::before {
   line-height: 75px;
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: #000;
   font-size: 50px !important;
+  border-radius: 50%;
+}
+footer .footer-mobile-slider {
+  display: none;
+}
+footer .footer-mobile-slider .slider-item:focus {
+  outline: 0 !important;
+}
+footer .footer-mobile-slider .slider-item img {
+  height: 200px;
+}
+footer .footer-mobile-slider .slick-prev {
+  left: 10px;
+  z-index: 9;
+}
+footer .footer-mobile-slider .slick-prev::before {
+  content: "";
+  display: inline-block;
+  z-index: 9 !important;
+  line-height: 75px;
+  font-size: 30px !important;
+  text-align: center;
+  color: #000;
+  border-radius: 50%;
+}
+footer .footer-mobile-slider .slick-next {
+  right: 10px;
+}
+footer .footer-mobile-slider .slick-next::before {
+  content: "";
+  display: inline-block;
+  z-index: 9 !important;
+  line-height: 75px;
+  font-size: 30px !important;
+  text-align: center;
+  color: #000;
   border-radius: 50%;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-slider .slider-item {
+  footer .footer-desktop-slider .slider-item {
     height: 570px;
   }
 }
@@ -425,7 +449,7 @@ footer .footer-slider .slick-next::before {
     font-size: 93px !important;
   }
 
-  footer .footer-slider .slider-item {
+  footer .footer-desktop-slider .slider-item {
     height: 430px;
   }
 }
@@ -467,8 +491,16 @@ footer .footer-slider .slick-next::before {
     padding-left: 50px !important;
   }
 
-  footer .footer-slider .slider-item {
+  footer .footer-desktop-slider .slider-item {
     height: 255px;
+  }
+
+  .footer-desktop-slider {
+    display: none;
+  }
+
+  .footer-mobile-slider {
+    display: block !important;
   }
 }
 @media (max-width: 376px) {
@@ -480,7 +512,7 @@ footer .footer-slider .slick-next::before {
     padding-bottom: 70px !important;
   }
 
-  footer .footer-slider .slider-item {
+  footer .footer-desktop-slider .slider-item {
     height: 230px;
   }
 }
@@ -494,12 +526,12 @@ footer .footer-slider .slick-next::before {
     font-size: 80px !important;
   }
 }
-footer .footer-slider .slider-item {
+footer .footer-desktop-slider .slider-item {
   background-size: cover;
   background-position: center;
 }
 
-footer .footer-slider .slick-prev::before, footer .footer-slider .slick-next::before {
+footer .footer-desktop-slider .slick-prev::before, footer .footer-desktop-slider .slick-next::before, footer .footer-mobile-slider .slick-prev::before, footer .footer-mobile-slider .slick-next::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;
